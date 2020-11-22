@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel = "stylesheet" href = "to_do_list.css">
+    <script src="https://kit.fontawesome.com/48d6d2c9fa.js" crossorigin="anonymous"></script>
+    <script src="File_saver/FileSaver.js"></script>
+    <script type="text/javascript" src="to_do_list.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1>My to-do List</h1>
+        <div id="container_cont">
+            <input onkeypress = "press()" type="text" name="" id="input_text">
+            <input onclick = "add()" type="submit" value="Add">
+        </div>
+    </div>
+    <div id="list">
+    </div>
+    <div id="container2">
+        <button onclick = "clear_completed()" id="clear_completed">Clear completed</button>
+        <button onclick = "empty_list()" id="empty_list">Empty List</button>
+        <button onclick = "save_list()" id="save_list">Save List</button>
+    </div>
+</body>
+</html>

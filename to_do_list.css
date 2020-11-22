@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    justify-content:space-between;
+    align-items:center;
+    background:#03071e;
+}
+h1{
+    margin-top:20px;
+    text-decoration:underline;
+    margin-bottom:70px;
+    color:white;
+}
+#container2{
+    margin-bottom:40px;
+    width:100vw;
+    display:flex;
+    justify-content:space-evenly;
+}
+button{
+    border:none;
+    cursor:pointer;
+    padding:2%;
+    border-radius:40px;
+    color:white;
+    font-family:monospace;
+    font-size:1.3em;
+}
+#container{
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#container_cont{
+    display:flex;
+    justify-content:space-evenly;
+    width:100vw;
+}
+#container_cont input[type="text"]{
+    width:60vw;
+    max-height:75px;
+}
+input[type="submit"]{
+    font-size:1.3em;
+    cursor:pointer;
+    font-family:monospace;
+    border:none;
+    padding:2%;
+    border-radius:10px;
+    background-color:rgb(24, 189, 9);
+    box-shadow: 0 0 14px 5px rgb(76, 216, 11);
+    color:white;
+}
+input[type="submit"]:active{
+    box-shadow: none;
+}
+#clear_completed{
+    background-color:rgb(9, 162, 189);
+    box-shadow: 0 0 14px 5px rgb(11, 141, 216);
+}
+#clear_completed:active,#empty_list:active,#save_list:active{
+    box-shadow:none;
+}
+#empty_list{
+    background-color:rgb(189, 15, 9);
+    box-shadow: 0 0 14px 5px rgb(216, 11, 11);
+
+}
+#save_list{
+    background-color:rgb(189, 9, 135);
+    box-shadow: 0 0 14px 5px rgb(124, 11, 216);
+}
+#list {
+    height:65vh;
+    width:100vw;
+    overflow:auto;
+}
+#list #list1{
+    display:inline-block;
+    margin-top:10px;
+    width:80vw;
+    height:7vh;
+    background-color:#a8dadc;
+    text-align:left;
+    font-size:1.8em;
+    font-family:monospace;
+    line-height:40px;
+    color:#03071e;
+    overflow:auto;
+}
+#list span{
+    display:inline-block;
+    height:7vh;
+    width:18vw;
+    background-color:#f77f00;
+    position:relative;
+    left:0;
+    border-radius:20px;
+    cursor:pointer;
+    transition:background-color 200ms;
+}
+#list span i{
+    position:absolute;
+    left:50%;
+    top:50%;
+    font-size:2em;
+    transform:translate(-50%,-50%);
+}
